@@ -135,6 +135,9 @@ color: var(--color-primary);
 nav ul li a.active {
 background-color: var(--color-primary);
 color: var(--color-white);
+}
+nav ul li a.active:hover{
+color: var(--color-white);
 
 }
 
@@ -199,6 +202,7 @@ section.landing .profile__area .outer__circle{
     border: 1px solid var(--color-primary);
     border-radius: 50%;
     position: relative;
+    box-shadow:  0 0 3rem .5rem var(--color-primary-light);
     animation: move 20s linear infinite;
 
 }
@@ -248,5 +252,41 @@ section.landing .profile__area .inner__circle{
    height: 20rem;
    border-radius: 50%;
    overflow: hidden;
+
    /* border: 2px solid black; */
+}
+
+/* =========------  about section
+--------==================== */
+
+section.about{
+    background: var(--color-light);
+}
+
+
+section.about .container{
+    display: grid;
+    grid-template-columns: 26rem auto;
+    gap: 5rem;
+    margin-top: -5rem;
+
+}
+section.about .info{
+    margin-top: 6rem;
+}
+section.about p{
+    margin-bottom: 2rem;
+}
+section.about .container .read__more{
+    display: none;
+}
+
+section.about .container .read__more__btn{
+    display: block;
+    margin: 1rem 0 2rem ;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+section.about .container .read__more__btn:hover{
+    text-decoration: underline;
 }
