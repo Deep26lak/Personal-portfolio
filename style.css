@@ -6,7 +6,7 @@
     --color-dark: #525252;
     --color-black: #141415;
     --color-primary: #0077ff;
-    --color-primary-light: hsl(14, 89%, 53%, 12%);
+    --color-primary-light: hsla(206, 87%, 62%, 0.2);
     --color-success: #29f5a6;
     --color-warning: #ffce31;
 
@@ -78,9 +78,10 @@ img{
     display: inline-block;
     margin: 2rem 0;
     transition: var(--transition);
+    border-radius: 20px;
 }
 .btn:hover{
-    box-shadow: .2rem 2rem var(--color-primary-light);
+    box-shadow: .7rem 1.2rem var(--color-primary-light);
 }
 .btn__primary{
     background-color: var(--color-primary);
@@ -135,4 +136,117 @@ nav ul li a.active {
 background-color: var(--color-primary);
 color: var(--color-white);
 
+}
+
+/* =========------  landing page --------==================== */
+section.landing{
+    display: grid;
+    place-items:center;
+    position: relative;
+    top: 5rem;
+    padding-bottom: 14rem;
+}
+section.landing .container{
+    display: grid;
+    grid-template-columns: 5rem auto 26rem;
+}
+section.landing .socials{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 5rem;
+}
+section.landing .socials a{
+    font-size: 1.2rem;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border-radius: 50%;
+    padding: .5rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+section.landing .socials a:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 3px solid var(--color-primary);
+}
+section.landing .info h1{
+    text-align: left;
+    margin: 0;
+}
+section.landing .info h1 span{
+    color: var(--color-primary);
+}
+section.landing .info h3{
+    margin: 2.4rem 0 1.1rem;
+}
+section.landing .info p{
+    width: 35rem;
+}
+
+section.landing .profile__area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.landing .profile__area .outer__circle{
+    width: 26rem;
+    height: 26rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    position: relative;
+    animation: move 20s linear infinite;
+
+}
+@keyframes move {
+    to{
+        transform: rotate(360deg);
+    }
+}
+section.landing .profile__area .outer__circle span{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem var(--color-primary-light);
+
+
+}
+
+section.landing .profile__area .outer__circle span:nth-child(1){
+  left: 42%;
+  top: -2rem;
+
+}
+section.landing .profile__area .outer__circle span:nth-child(2){
+  right: -2rem;
+  top: 43%;
+}
+section.landing .profile__area .outer__circle span:nth-child(3){
+    left: 43%;
+    bottom: -2rem;
+  
+  }
+section.landing .profile__area .outer__circle span:nth-child(4){
+    left: -2rem;
+    top: 43%;
+  
+  }
+section.landing .profile__area .inner__circle{
+   position: absolute;
+   width: 20rem;
+   height: 20rem;
+   border-radius: 50%;
+   overflow: hidden;
+   /* border: 2px solid black; */
 }
