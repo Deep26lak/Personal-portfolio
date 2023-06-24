@@ -418,3 +418,34 @@ section.skills .skill.skill__4 .item:nth-child(3) .progress__bar .progress{
 
 
 /* ======================= --------- Services Section--------------------------- ============================ */
+
+
+section.services{
+    background-color: var(--color-light);
+}
+
+section.services .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+section.services .container .service{
+    background-color: var(--color-white);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 2rem;
+    cursor: default;
+    transition: var(--transition);
+}
+section.services .container .service:hover{
+    box-shadow: 1.7rem 2rem  rgba(0, 0, 0, .1);
+    transform: scale(1.1);
+    z-index: 2;
+}
+section.services .container .service i{
+    font-size: 2rem;
+}
