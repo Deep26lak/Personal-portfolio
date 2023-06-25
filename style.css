@@ -488,6 +488,7 @@ section.recent__work .projects .project .action a:hover{
     overflow-x: hidden;
     position: relative;
     margin-bottom: 5rem;
+    height: 100vh;
 }
 
 .testimonial {
@@ -531,12 +532,12 @@ section.recent__work .projects .project .action a:hover{
 /* section.contact{
     background: url(./images/cover.png);
 } */
-
-section.contact .over{
+section.contact {
+background: rgba(0, 0, 0, .1);
 width: 100%;
 height: 100%;
-background: rgba(0, 0, 0, .1);
 padding: 10rem 0 7rem;
+    
 }
 section.contact  .container{
     width: 40%;
@@ -578,4 +579,56 @@ section.contact  .container form .btn:hover{
     background: var(--color-primary);
     color: white;
     cursor: pointer;
+}
+
+
+
+/* footer */
+
+
+
+footer {
+    padding-top: 5rem;
+    /* background-color: red; */
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container ul{
+    display: flex;
+    gap: 3rem;
+}
+footer .container ul a{
+    color: var(--color-dark);
+    transition: var(--transition);
+}
+footer .container ul a:hover{
+    color: var(--color-primary);
+}
+footer .container .socials{
+    display: flex;
+    gap: 2rem;
+}
+footer .container .socials a{
+    background: var(--color-light);
+    color: var(--color-dark);
+    font-size: 1.3rem;
+    border-radius: 50%;
+    transition: var(--transition);
+    padding: .5rem; 
+}
+footer .container .socials a:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+footer .copyright{
+    background-color: var(--color-primary);
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1rem .7rem;
+    color: var(--color-white);
 }
