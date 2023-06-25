@@ -526,3 +526,54 @@ section.recent__work .projects .project .action a:hover{
     top: -1.5rem;
     transform: rotate(45deg)
 }
+
+/* contact page */
+/* section.contact{
+    background: url(./images/cover.png);
+} */
+
+section.contact .over{
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, .1);
+padding: 10rem 0 7rem;
+}
+section.contact  .container{
+    width: 40%;
+}
+
+section.contact  .container h1{
+    margin: 0;
+}
+section.contact  .container p{
+    text-align: center;
+    opacity: .8;
+    margin-block:.7rem ;
+}
+section.contact  .container form{
+    margin-top: 2rem;
+}
+section.contact  .container form textarea{
+    height: 10rem;
+}
+
+section.contact  .container form input,section.contact  .container form textarea{
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+    padding: 1.6rem;
+    border: 1px solid var(--color-primary-light);
+    border-radius: 20px;
+    /* background: transparent; */
+}
+section.contact  .container form .btn{
+    width: 14rem;
+    border: 1px solid var(--color-dark);
+    background: var(--color-white);
+    color: var(--color-black);
+}
+section.contact  .container form .btn:hover{
+    background: var(--color-primary);
+    color: white;
+    cursor: pointer;
+}
