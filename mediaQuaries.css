@@ -34,16 +34,18 @@
         width: 100%;
     }
 
-    nav .container ul {
+    nav .container ul{
         position: fixed;
         top: 0;
+        left: -50%;
         flex-direction: column;
         z-index: 4;
-        width: 16rem;
+        width: 13rem;
+        transition: var(--transition);
         height: 100vh;
         background-color: var(--color-white);
         box-shadow: 1rem 0 2rem var(--color-primary-light);
-        display: none;
+        /* display: none; */
     }
 
     nav ul li {
