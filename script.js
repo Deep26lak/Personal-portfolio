@@ -11,7 +11,7 @@ menubtn.addEventListener('click',()=>{
 })
 
 closebtn.addEventListener("click",()=>{
-    menuItem.style.left = "-50%"
+    menuItem.style.left = "-100%"
 
     menubtn.style.display="block"
     closebtn.style.display ="none";
