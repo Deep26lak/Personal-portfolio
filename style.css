@@ -89,9 +89,17 @@ img{
     margin: 2rem 0;
     transition: var(--transition);
     border-radius: 20px;
+    box-shadow: 0 1rem 2rem  var(--color-primary);
+    font-weight: 700;
+}
+.contact-btn{
+    box-shadow: 0 1rem 2rem var(--color-primary-light);
+     
 }
 .btn:hover{
-    box-shadow: .7rem 1.2rem var(--color-primary-light);
+    /* box-shadow: .7rem 1.2rem var(--color-primary-light); */
+    box-shadow: 0 1rem 2rem .2rem var(--color-primary);
+
 }
 .btn__primary{
     background-color: var(--color-primary);
@@ -196,9 +204,19 @@ section.landing .info h1 span{
 }
 section.landing .info h3{
     margin: 2.4rem 0 1.1rem;
+
+}
+section.landing .info h3 span{
+    color:rgb(253, 39, 71);
+    font-size: 1.9rem;
 }
 section.landing .info p{
     width: 35rem;
+}
+section.landing .info p span{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: var(--color-primary);
 }
 
 section.landing .profile__area{

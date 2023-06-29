@@ -18,6 +18,15 @@
     h5 {
         font-size: .69rem;
     }
+    .btn{
+        padding: 1rem 2rem;
+        box-shadow: 0 1rem 2rem .2rem var(--color-primary);
+        font-weight: 700;
+    }
+    /* .contact-btn{
+        box-shadow: 0 1rem 2rem var(--color-primary-light);
+         
+    } */
 
     .container {
         width: 90%;
