@@ -204,6 +204,7 @@
 
     section.contact .container {
         width: 94%;
+        margin: 0;
     }
 
     section.contact .container p {
@@ -212,6 +213,7 @@
     }
 
 
+   
     /*  footer  */
 
     footer .container {
