@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--color-primary-light);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-primary);
+    border-radius: 20px;
+}
+
+
 :root {
     --color-white: #fff;
     --color-light: #f4f4f4;
@@ -264,6 +274,7 @@ section.about{
 }
 
 
+
 section.about .container{
     display: grid;
     grid-template-columns: 26rem auto;
@@ -277,18 +288,21 @@ section.about .info{
 section.about p{
     margin-bottom: 2rem;
 }
-section.about .container .read__more{
+section.about .container .read__more__content{
     display: none;
 }
 
-section.about .container .read__more__btn{
+section.about .container .read__more{
     display: block;
     margin: 1rem 0 2rem ;
     color: var(--color-primary);
     cursor: pointer;
 }
-section.about .container .read__more__btn:hover{
+section.about .container .read__more:hover{
     text-decoration: underline;
+}
+section.about .container  .toggle_btn{
+    display: block;
 }
 
 /* =========------  skills section
@@ -343,6 +357,9 @@ section.skills .skill .item .progress__area{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+section.skills .skill .items.show__more{
+    display: block;
 }
 section.skills .skill .item .progress__bar{
     width: 100%;

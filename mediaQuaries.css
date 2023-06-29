@@ -23,9 +23,6 @@
         width: 90%;
     }
 
-    nav {
-        box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
-    }
 
     nav h3 {
         margin-left: 1rem;
@@ -48,6 +45,10 @@
         box-shadow: 1rem 0 2rem var(--color-primary-light);
         /* display: none; */
     }
+ nav.add__shadow{
+    box-shadow: 0 0.6rem  3rem var(--color-primary-light);
+    border: none;
+ }
 
     nav ul li {
         height: 4.6rem;

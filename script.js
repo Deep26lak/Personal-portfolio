@@ -34,3 +34,29 @@ navItem.forEach(item=>{
         link.classList.add('active')
     })
 })
+
+const readMoreContent = document.querySelector(".read__more__content")
+const readMoreBtn=document.querySelector(".read__more")
+
+readMoreBtn.addEventListener("click",()=>{
+    readMoreContent.classList.toggle("toggle_btn")
+  if(readMoreContent.classList.contains("toggle_btn")){
+      readMoreBtn.textContent='Show less'
+  }else{
+    readMoreBtn.textContent ='Read more...'
+  }
+})
+
+
+const skillitems=document.querySelectorAll('section.skills .skill')
+
+skillitems.forEach(skill=>{
+    skill.querySelector('.head').addEventListener("click",()=>{
+        skill.querySelector(".items").classList.toggle("show__more")
+    })
+})
+
+
+window.addEventListener("scroll",()=>{
+    document.querySelector("nav").classList.toggle("add__shadow",window.scrollY>0)
+})
