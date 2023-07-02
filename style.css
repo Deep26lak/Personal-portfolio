@@ -23,6 +23,18 @@
 
     --transition: all 300ms ease;
 }
+/*     ---------------  Dark theme variable ----------------- */
+
+
+.dark-theme-variables {
+    --color-white: #181a1e;
+    --color-light: #202528;
+    --color-dark: #edeffd;
+    --color-black: #edeffd;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -143,6 +155,37 @@ nav .container ul li a{
     position: relative;
     transition: var(--transition);
 }
+.theme-toggler{
+    margin: 1.6rem;
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    border-radius: 10px;
+}
+
+.theme-toggler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+   
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.theme-toggler span.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 20px;
+}
+
+
+
 nav .container ul li a:hover{
 color: var(--color-primary);
 }
