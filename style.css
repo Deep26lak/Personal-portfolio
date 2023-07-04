@@ -735,13 +735,13 @@ section.contact .socials {
 }
 
 section.contact .socials a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background-color: var(--color-light);
     color: var(--color-dark);
     border-radius: 50%;
     padding: .5rem;
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
