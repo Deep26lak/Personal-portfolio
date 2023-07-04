@@ -202,16 +202,22 @@
 
     /* contact */
 
-    section.contact .container {
+    section.contact  .container{
+        grid-template-columns: 1fr;
         width: 94%;
+        margin: 0;
+        /* gap: 1rem; */
+    }
+    section.contact  .container .left iframe{
+        width: 110%;
         margin: 0;
     }
 
-    section.contact .container p {
-        width: 80vw;
-        margin: .5rem auto 0;
+    section.contact  .container .right{
+        width: 100%;
+        grid-row: 1;
+        padding: 2rem;
     }
-
 
    
     /*  footer  */
@@ -323,6 +329,14 @@
         flex-direction: column;
         gap: 1.4rem;
         text-align: center;
+    }
+    section.contact  .container{
+        grid-template-columns: 1fr;
+
+    }
+    section.contact  .container .right{
+        width: 100%;
+        grid-row: 1;
     }
 }
 
