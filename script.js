@@ -72,3 +72,15 @@ themeToggler.addEventListener("click",(e)=>{
     themeToggler.querySelector("span:nth-child(1)").classList.toggle('active')
     themeToggler.querySelector("span:nth-child(2)").classList.toggle('active')
 })
+
+
+// typing animation 
+
+
+let typed = new Typed(".typing",{
+ strings: ["Front-end Devoloper" , "UI/UX Designer" ,"Javascript Devoloper" , "React JS devoloper"],
+ typeSpeed:150,
+ backSpeed:60,
+ loop:true,
+
+})

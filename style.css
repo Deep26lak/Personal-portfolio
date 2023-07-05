@@ -387,12 +387,18 @@ section.about .container {
 
 }
 
+
 section.about .info {
     margin-top: 6rem;
 }
 
 section.about p {
     margin-bottom: 2rem;
+}
+section.about p span{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--color-primary);   
 }
 
 section.about .container .read__more__content {
@@ -726,6 +732,7 @@ section.contact .container .right .info a:hover {
 
 section.contact .container .right .info a i {
     margin-right: .5rem;
+    color:var(--color-primary);
 }
 
 section.contact .socials {

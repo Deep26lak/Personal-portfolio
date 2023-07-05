@@ -175,7 +175,9 @@
         gap: 1rem;
         text-align: center;
     }
-
+    section.about p span{
+        font-size: 1.3rem;
+    }
 
 
     /*  skill section */
@@ -319,6 +321,10 @@
         width: 94%;
         margin: 2rem auto 3rem;
         height: 50%;
+    }
+
+    section.about .container{
+        grid-template-columns: 1fr;
     }
     footer .container {
         flex-direction: column;
