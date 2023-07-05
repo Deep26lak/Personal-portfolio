@@ -78,9 +78,9 @@ themeToggler.addEventListener("click",(e)=>{
 
 
 let typed = new Typed(".typing",{
- strings: ["Front-end Devoloper" , "UI/UX Designer" ,"Javascript Devoloper" , "React JS devoloper"],
- typeSpeed:150,
- backSpeed:60,
+ strings: ["Front-end Developer" , "UI/UX Designer" ,"Javascript Developer" , "React JS developer"],
+ typeSpeed:200,
+ backSpeed:100,
  loop:true,
 
 })
