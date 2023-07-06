@@ -16,5 +16,6 @@
              600:{
                 slidesPerView: 2,
             }
-        }
+        },
+        loop:true
     });

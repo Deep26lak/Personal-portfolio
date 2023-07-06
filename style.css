@@ -70,7 +70,7 @@ h5 {
 
 h1 {
     font-size: 3.8rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -397,10 +397,11 @@ section.about .info {
 section.about p {
     margin-bottom: 2rem;
 }
-section.about p span{
+
+section.about p span {
     font-size: 1.7rem;
     font-weight: 600;
-    color: var(--color-primary);   
+    color: var(--color-primary);
 }
 
 section.about .container .read__more__content {
@@ -646,34 +647,43 @@ section.recent__work .projects .project .action a:hover {
 .testimonials__container {
     overflow-x: hidden;
     position: relative;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
     height: 100vh;
 }
 
 .testimonial {
-    padding-top: 2rem;
+    padding:1rem 0 ;
     cursor: grab;
+    height: fit-content;
 }
+
 
 .avatar {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 1rem;
+    margin: -1rem auto 1rem;
     border: 1rem solid var(--color-bg1);
 }
 
 .testimonial__info {
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .testimonial__body {
     background: var(--color-primary);
     padding: 2rem;
-    margin-top: 3rem;
+    height: 15rem;
+    border-radius: 20px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .testimonial__body::before {
@@ -734,7 +744,7 @@ section.contact .container .right .info a:hover {
 
 section.contact .container .right .info a i {
     margin-right: .5rem;
-    color:var(--color-primary);
+    color: var(--color-primary);
 }
 
 section.contact .socials {
