@@ -322,6 +322,10 @@
         margin: 2rem auto 3rem;
         height: 50%;
     }
+    section.services .container{
+    grid-template-columns: repeat(2, 1fr);
+
+    }
 
     section.about .container{
         grid-template-columns: 1fr;
