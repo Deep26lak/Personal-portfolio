@@ -83,3 +83,7 @@ let typed = new Typed(".typing",{
  backSpeed:20,
  loop:true,
 })
+
+
+// scroll Effect
+
