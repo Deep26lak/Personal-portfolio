@@ -509,9 +509,9 @@ section.skills .skill.skill__2 .item:nth-child(6) .progress__bar .progress {
 }
 
 /*  skill 3 */
-/* section.skills .skill.skill__3 {
-    display: none;
-} */
+section.skills .skill.skill__3 {
+  display: none;
+}
 section.skills .skill.skill__3 .item:nth-child(1) .progress__bar .progress {
   width: 92%;
 }
